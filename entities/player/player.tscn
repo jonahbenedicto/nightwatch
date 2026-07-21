@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c60aplx0lu473"]
+
+[ext_resource type="Script" uid="uid://mu8jvcreiquk" path="res://entities/player/player.gd" id="1_symyc"]
+[ext_resource type="SpriteFrames" uid="uid://cqafjxifytaw3" path="res://entities/player/player.tres" id="2_abrql"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_symyc"]
+
+[node name="Player" type="CharacterBody2D" unique_id=846066793]
+script = ExtResource("1_symyc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=754598499]
+shape = SubResource("RectangleShape2D_symyc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=967968504]
+sprite_frames = ExtResource("2_abrql")
+animation = &"walk_up"
