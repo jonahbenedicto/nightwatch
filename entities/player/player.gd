@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var speed: float = 300.0
 @export var acceleration: float = 1500.0
 @export var friction: float = 2000.0
+
 @onready var animated_sprite_2d: AnimatedSprite2D = %AnimatedSprite2D
 
 const WALK_ANIMATIONS: Dictionary[Vector2, String] = {
