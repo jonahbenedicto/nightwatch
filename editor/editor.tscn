@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ce6u3l4ymv7tx"]
 
 [ext_resource type="Script" uid="uid://livgvknlo272" path="res://editor/data.gd" id="1_ycap1"]
-[ext_resource type="TileSet" uid="uid://bmrcv3v4508nq" path="res://editor/FloorTileSet.tres" id="2_er7c6"]
-[ext_resource type="Script" uid="uid://bvrmcqoorls3m" path="res://editor/layers/dual_grid_tile_map_layer.gd" id="2_fjngd"]
+[ext_resource type="TileSet" uid="uid://bmrcv3v4508nq" path="res://editor/tileset/floor.tres" id="2_er7c6"]
+[ext_resource type="Script" uid="uid://bvrmcqoorls3m" path="res://editor/tilemap/dual_grid_tile_map_layer.gd" id="2_fjngd"]
 
 [node name="Editor" type="Node2D" unique_id=1880764867]
 
@@ -11,7 +11,7 @@ script = ExtResource("1_ycap1")
 
 [node name="Layers" type="Node2D" parent="." unique_id=756129482]
 
-[node name="GrassTileMapLayer" type="TileMapLayer" parent="Layers" unique_id=1588668120 node_paths=PackedStringArray("data")]
+[node name="Grass" type="TileMapLayer" parent="Layers" unique_id=1588668120 node_paths=PackedStringArray("data")]
 tile_set = ExtResource("2_er7c6")
 script = ExtResource("2_fjngd")
 data = NodePath("../../Data")
